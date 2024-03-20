@@ -27,17 +27,16 @@
  //--decr;
  console.log(++incr);   
  console.log(--decr);  
-//console.log(incr); 
-const numberOfFilms=+prompt("сколько фильмов вы уже посмотрели?","");
-console.log(numberOfFilms[0]);
-
+ console.log(incr); 
+/* const numberOfFilms=+prompt("сколько фильмов вы уже посмотрели?","");
+ console.log(numberOfFilms[0]);
 const personalMovieDB = {
     count:numberOfFilms,
     movies:{
     },
-    actors:{},
-    genres:[],
-    privat:false
+   actors:{},
+   genres:[],
+   privat:false
 };
 const a = prompt("один из последних просмотренных фильмов?",""),
       b = prompt("на сколько оцените его?",""),
@@ -45,4 +44,108 @@ const a = prompt("один из последних просмотренных ф
       d = prompt("на сколько оцените его?","");
 personalMovieDB.movies[a]=b;
 personalMovieDB.movies[c]=d;
-console.log(personalMovieDB)
+console.log(personalMovieDB);*/
+/*if(1){
+    console.log("ok!") 
+}else{
+    console.log("error!")
+}
+const num = 50;
+(num===50) ? console.log("ok!") : console.log("error!");   //в тернаронм операторе всегда 3 аргумента
+4 + 4  //плюсик здесь бинарный аргумент
++"4"  // здесь унарный аргумент
+*/
+/*const a = 50;         //конструкция свич всегда только на строгое сравнение
+switch(a){
+    case 49:console.log('неверно');
+    break;
+    case 100:console.log('неверно');
+    break;
+    case 50:console.log('верно');
+    break;
+    default:console.log('не в этот раз')
+    break;
+
+}
+
+let hamburger;
+const fries = NaN;
+const cola = 0;
+const nuggets = 2;
+
+
+if (hamburger && cola || fries === 3 && nuggets) {
+   console.log('Done!')
+}*/
+//let num = 50
+/*while(num<=55){
+    console.log(num)
+    num++
+}
+do{
+    console.log(num)
+    num++
+} 
+while(num<55)*/
+/*for(let i = 1;i<8;i++){
+   // console.log(num);
+    //num++;
+    if(i===5){
+     //   break;
+        continue;
+    }
+    console.log(i);
+}*/
+
+/*let result = "";
+const length = 7;
+for(let i = 1;i<length;i++){
+    for(let j = 0;j<i;j++){
+        result +="*";
+    }
+   result +='\n';
+}
+console.log(result);
+ first:  for(let i = 0;i<3;i++){
+    console.log(`first level ${i}`);
+    for(let j = 0;j<3;j++){  
+        console.log(`second level ${j}`); 
+        for(let k=0;k<3;k++){
+            if(k===2) continue first;
+            console.log(`third level ${k}`);
+
+        }
+    }
+}*/
+
+/*let i = 2;
+while(i<=16){
+    if(i%2===0){
+        i++;
+        continue;
+    }else{
+        console.log(i);
+    }
+    i++;
+}
+const arr = [3, 5, 8, 16, 20, 23, 50];
+const result = [];
+
+// Пишем решение вот тут
+for(i=0;i<arr.length;i++){
+    result[i]=arr[i];
+    console.log(arr[i]);
+    console.log(result[i]);
+}
+*/
+const lines = 5;
+let result = "\t*";
+// Проверяется именно переменная result, формируйте строку в ней
+
+for(let i = 0;i<=lines;i++){
+    for(let j = 0;j<i;j++){
+        result =`\t\t*${result}*`;
+    }
+    result+='\n';
+}
+console.log(result)
