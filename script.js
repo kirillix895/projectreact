@@ -137,15 +137,40 @@ for(i=0;i<arr.length;i++){
     console.log(arr[i]);
     console.log(result[i]);
 }
-*/
-const lines = 5;
-let result = "\t*";
-// Проверяется именно переменная result, формируйте строку в ней
 
-for(let i = 0;i<=lines;i++){
-    for(let j = 0;j<i;j++){
-        result =`\t\t*${result}*`;
+const lines = 5;
+let result = '';
+
+for (let i = 0; i <= lines; i++) {
+    for (let j = 0; j < lines - i; j++) {
+        result += " ";
     }
-    result+='\n';
+    for (let j = 0; j < 2 * i + 1; j++) {
+        result += "*";
+    }
+    result += "\n";
 }
-console.log(result)
+
+console.log(result)*/
+const numberOfFilms=+prompt("сколько фильмов вы уже посмотрели?","");
+ console.log(numberOfFilms[0]);
+const personalMovieDB = {
+    count:numberOfFilms,
+    movies:{
+    },
+   actors:{},
+   genres:[],
+   privat:false
+};
+//const a = prompt("один из последних просмотренных фильмов?",""),
+//      b = prompt("на сколько оцените его?",""),
+//      c = prompt("один из последних просмотренных фильмов?",""),
+//      d = prompt("на сколько оцените его?","");
+//personalMovieDB.movies[a]=b;
+//personalMovieDB.movies[c]=d;
+for(let i = 0;i <2;i++){
+    const a = prompt("один из последних просмотренных фильмов?",""),
+      b = prompt("на сколько оцените его?","");
+    personalMovieDB.movies[a]=b;
+}
+console.log(personalMovieDB);
