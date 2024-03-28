@@ -169,6 +169,9 @@ const personalMovieDB = {
 //personalMovieDB.movies[a]=b;
 //personalMovieDB.movies[c]=d;
 for(let i = 0;i <2;i++){
+    if(personalMovieDB[a]==""){
+
+    }
     const a = prompt("один из последних просмотренных фильмов?",""),
       b = prompt("на сколько оцените его?","");
     personalMovieDB.movies[a]=b;
